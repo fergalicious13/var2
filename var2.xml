@@ -40,34 +40,78 @@
                               </block>
                             </value>
                             <next>
-                              <block type="movement_reverse" id="323">
+                              <block type="movement_forward" id="354">
                                 <next>
-                                  <block type="robot_delay" id="162" inline="true">
+                                  <block type="robot_delay" id="355" inline="true">
                                     <value name="DELAY">
-                                      <block type="variables_get" id="193">
+                                      <block type="variables_get" id="356">
                                         <field name="VAR">delayCount</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="movement_right" id="333">
+                                      <block type="movement_reverse" id="323">
                                         <next>
-                                          <block type="variables_set" id="214" inline="true">
-                                            <field name="VAR">delayCount</field>
-                                            <value name="VALUE">
-                                              <block type="math_arithmetic" id="221" inline="true">
-                                                <field name="OP">ADD</field>
-                                                <value name="A">
-                                                  <block type="variables_get" id="252">
-                                                    <field name="VAR">delayCount</field>
-                                                  </block>
-                                                </value>
-                                                <value name="B">
-                                                  <block type="math_number" id="272">
-                                                    <field name="NUM">100</field>
-                                                  </block>
-                                                </value>
+                                          <block type="robot_delay" id="162" inline="true">
+                                            <value name="DELAY">
+                                              <block type="variables_get" id="193">
+                                                <field name="VAR">delayCount</field>
                                               </block>
                                             </value>
+                                            <next>
+                                              <block type="movement_right" id="333">
+                                                <next>
+                                                  <block type="robot_delay" id="360" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="variables_get" id="361">
+                                                        <field name="VAR">delayCount</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="movement_forward" id="357">
+                                                        <next>
+                                                          <block type="robot_delay" id="362" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="variables_get" id="363">
+                                                                <field name="VAR">delayCount</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="variables_set" id="214" inline="true">
+                                                                <field name="VAR">delayCount</field>
+                                                                <value name="VALUE">
+                                                                  <block type="math_arithmetic" id="221" inline="true">
+                                                                    <field name="OP">ADD</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="252">
+                                                                        <field name="VAR">delayCount</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="272">
+                                                                        <field name="NUM">100</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="robot_delay" id="358" inline="true">
+                                                                    <value name="DELAY">
+                                                                      <block type="variables_get" id="359">
+                                                                        <field name="VAR">delayCount</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
