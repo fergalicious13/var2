@@ -3,7 +3,7 @@
     <field name="VAR">loopCount</field>
     <value name="VALUE">
       <block type="math_number" id="2">
-        <field name="NUM">20</field>
+        <field name="NUM">18</field>
       </block>
     </value>
     <next>
