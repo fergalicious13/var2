@@ -1,1 +1,91 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="2" inline="true" x="82" y="60">
+    <field name="VAR">loopCount</field>
+    <value name="VALUE">
+      <block type="math_number" id="9">
+        <field name="NUM">7</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="13" inline="true">
+        <field name="VAR">delayCount</field>
+        <value name="VALUE">
+          <block type="math_number" id="25">
+            <field name="NUM">300</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_repeat" id="40" inline="true">
+            <value name="TIMES">
+              <block type="variables_get" id="66">
+                <field name="VAR">loopCount</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_forward" id="84">
+                <next>
+                  <block type="robot_delay" id="160" inline="true">
+                    <value name="DELAY">
+                      <block type="variables_get" id="186">
+                        <field name="VAR">delayCount</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_stutter" id="105">
+                        <next>
+                          <block type="robot_delay" id="161" inline="true">
+                            <value name="DELAY">
+                              <block type="variables_get" id="192">
+                                <field name="VAR">delayCount</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_left" id="133">
+                                <next>
+                                  <block type="robot_delay" id="162" inline="true">
+                                    <value name="DELAY">
+                                      <block type="variables_get" id="193">
+                                        <field name="VAR">delayCount</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="variables_set" id="214" inline="true">
+                                        <field name="VAR">delayCount</field>
+                                        <value name="VALUE">
+                                          <block type="math_arithmetic" id="221" inline="true">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="252">
+                                                <field name="VAR">delayCount</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="272">
+                                                <field name="NUM">200</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="movement_stop" id="282"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
