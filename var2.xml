@@ -3,7 +3,7 @@
     <field name="VAR">loopCount</field>
     <value name="VALUE">
       <block type="math_number" id="2">
-        <field name="NUM">10</field>
+        <field name="NUM">20</field>
       </block>
     </value>
     <next>
@@ -11,7 +11,7 @@
         <field name="VAR">delayCount</field>
         <value name="VALUE">
           <block type="math_number" id="4">
-            <field name="NUM">3000</field>
+            <field name="NUM">10000</field>
           </block>
         </value>
         <next>
