@@ -35,23 +35,23 @@
                         <next>
                           <block type="robot_delay" id="11" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="46">
+                              <block type="math_number" id="12">
                                 <field name="NUM">1300</field>
                               </block>
                             </value>
                             <next>
-                              <block type="variables_set" id="25" inline="true">
+                              <block type="variables_set" id="13" inline="true">
                                 <field name="VAR">delayCount</field>
                                 <value name="VALUE">
-                                  <block type="math_arithmetic" id="26" inline="true">
+                                  <block type="math_arithmetic" id="14" inline="true">
                                     <field name="OP">MINUS</field>
                                     <value name="A">
-                                      <block type="variables_get" id="27">
+                                      <block type="variables_get" id="15">
                                         <field name="VAR">delayCount</field>
                                       </block>
                                     </value>
                                     <value name="B">
-                                      <block type="math_number" id="28">
+                                      <block type="math_number" id="16">
                                         <field name="NUM">250</field>
                                       </block>
                                     </value>
@@ -68,7 +68,7 @@
               </block>
             </statement>
             <next>
-              <block type="movement_stop" id="31"></block>
+              <block type="movement_stop" id="17"></block>
             </next>
           </block>
         </next>
