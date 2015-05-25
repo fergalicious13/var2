@@ -35,8 +35,8 @@
                         <next>
                           <block type="robot_delay" id="11" inline="true">
                             <value name="DELAY">
-                              <block type="variables_get" id="12">
-                                <field name="VAR">delayCount</field>
+                              <block type="math_number" id="24">
+                                <field name="NUM">1300</field>
                               </block>
                             </value>
                             <next>
