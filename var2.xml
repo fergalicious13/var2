@@ -65,26 +65,6 @@
                                         </value>
                                       </block>
                                     </value>
-                                    <next>
-                                      <block type="variables_set" id="48" inline="true">
-                                        <field name="VAR">delayCount</field>
-                                        <value name="VALUE">
-                                          <block type="math_arithmetic" id="55" inline="true">
-                                            <field name="OP">MINUS</field>
-                                            <value name="A">
-                                              <block type="variables_get" id="102">
-                                                <field name="VAR">seconddelay</field>
-                                              </block>
-                                            </value>
-                                            <value name="B">
-                                              <block type="math_number" id="103">
-                                                <field name="NUM">200</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </next>
                                   </block>
                                 </next>
                               </block>
