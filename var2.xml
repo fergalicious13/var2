@@ -3,7 +3,7 @@
     <field name="VAR">seconddelay</field>
     <value name="VALUE">
       <block type="math_number" id="24">
-        <field name="NUM">1400</field>
+        <field name="NUM">1500</field>
       </block>
     </value>
     <next>
