@@ -3,7 +3,7 @@
     <field name="VAR">loopCount</field>
     <value name="VALUE">
       <block type="math_number" id="2">
-        <field name="NUM">10</field>
+        <field name="NUM">20</field>
       </block>
     </value>
     <next>
@@ -11,7 +11,7 @@
         <field name="VAR">delayCount</field>
         <value name="VALUE">
           <block type="math_number" id="4">
-            <field name="NUM">3000</field>
+            <field name="NUM">4500</field>
           </block>
         </value>
         <next>
@@ -35,8 +35,8 @@
                         <next>
                           <block type="robot_delay" id="11" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="12">
-                                <field name="NUM">1300</field>
+                              <block type="variables_get" id="12">
+                                <field name="VAR">delayCount</field>
                               </block>
                             </value>
                             <next>
@@ -52,7 +52,7 @@
                                     </value>
                                     <value name="B">
                                       <block type="math_number" id="16">
-                                        <field name="NUM">250</field>
+                                        <field name="NUM">200</field>
                                       </block>
                                     </value>
                                   </block>
